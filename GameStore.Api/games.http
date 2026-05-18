@@ -1,0 +1,29 @@
+GET http://localhost:5081/games
+
+###
+GET http://localhost:5081/games/1
+
+###
+POST http://localhost:5081/games
+Content-Type: application/json
+
+{
+  "name": "GTA V",
+  "genreId": 2,
+  "price": 39.99,
+  "releaseDate": "2013-09-17"
+}
+
+###
+PUT http://localhost:5081/games/4
+Content-Type: application/json
+
+{
+  "name": "Fry Cry 2",
+  "genreId": 2, 
+  "price": 34.99,
+  "releaseDate": "2008-10-21"
+}
+
+###
+DELETE http://localhost:5081/games/3
